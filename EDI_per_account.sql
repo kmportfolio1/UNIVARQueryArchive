@@ -7,6 +7,4 @@ OR misc5 like '%CIDX%'
 --AND misc5 <>''
 AND status ='ACTIVE'
 AND created_on > date_trunc('year', now())
-Group by 
-
-
+Group by 1, 2, 3 Order by 1
