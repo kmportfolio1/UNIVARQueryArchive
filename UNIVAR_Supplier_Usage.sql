@@ -10,4 +10,4 @@ AND usr.query_string3 = org.id
 AND org.query_string3 in (':14764459200:',':640100:')
 AND ual.created_on > date_trunc('year', now())
 AND ual.action='SUCCESSFUL_LOGON'
-Group by to_char(ual.created_on,'MM/DD/YYYY'), org.query_string3,usr.email,org.query_string6
+Group by to_char(ual.created_on,'MM/DD/YYYY'), org.query_string3,usr.email,org.query_string6 ORDER BY 1
